@@ -42,3 +42,6 @@ def workdir_view(request):
         directories += f'<li>{file}</li>'
     directories += '</ul>'
     return HttpResponse(directories)
+
+def hollo(request):
+    return render(request, 'app/demo.html')
